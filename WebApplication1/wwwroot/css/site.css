@@ -1,0 +1,101 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #1a202c;
+    color: white;
+}
+
+h3, h1, h2, p, label, h4, tr, dl {
+    color: white;
+}
+.grid {
+    display: flex;
+    flex-wrap:wrap;
+}
+.book {
+    margin: 0 0px;
+    flex:25%;
+    max-width:25%;
+
+}
+.book img {
+    border-radius: 20px;
+    width:100%;
+    max-width: 80%;
+    margin:10px
+    
+}
+.book h3 {
+    font-size:1em;
+    width: 100%;
+    max-width: 80%;
+    text-align:center;
+}
+.book a{
+    border:solid;
+    border-radius:20px;
+    padding:5px;
+    text-decoration:none;
+    margin-left: 27%
+}
+/*.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+input {
+    color: black;
+}
+
+.book {
+    display: flex;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 15px;
+}
+
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .column text {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}*/
