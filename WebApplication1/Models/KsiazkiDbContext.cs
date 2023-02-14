@@ -9,9 +9,8 @@ namespace WebApplication1.Models
         {
         }
 
-        public DbSet<Ksiazki> Ksiazkis
-        {
-            get; set;
-        }
+        public DbSet<Ksiazki> Ksiazkis{ get; set;} 
+
+
     }
 }

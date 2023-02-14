@@ -1,9 +1,6 @@
 ﻿@model IEnumerable<WebApplication1.Models.Ksiazki>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<div class="align-content-center"><h1>Recenzje Książek</h1></div>
+<div class="align-content-center"><h1>Książki na stanie</h1></div>
 <div class="grid">
 @foreach (var item in Model)
 {
@@ -14,7 +11,6 @@
        <h3>@Html.DisplayFor(modelItem => item.Tytul)</h3>
 
        <a asp-action="Details" asp-route-id="@item.Id">Szczegóły</a>
-
         @*@Html.DisplayFor(modelItem => item.Ocena)*@
     @* 
         <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
@@ -24,3 +20,4 @@
     </div>
 
 }
+</div>

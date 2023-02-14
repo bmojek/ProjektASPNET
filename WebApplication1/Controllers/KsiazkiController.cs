@@ -18,10 +18,17 @@ namespace WebApplication1.Controllers
         {
             _context = context;
         }
-
+        
         // GET: Ksiazki
-        [Authorize]
         public async Task<IActionResult> Index()
+        {
+            return _context.Ksiazki != null ?
+                        View(await _context.Ksiazki.ToListAsync()) :
+                        Problem("Entity set 'KsiazkiContext.Ksiazki'  is null.");
+        }
+
+        [Authorize]
+        public async Task<IActionResult> AdminPanel()
         {
             return _context.Ksiazki != null ?
                         View(await _context.Ksiazki.ToListAsync()) :
